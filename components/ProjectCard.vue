@@ -1,0 +1,56 @@
+<template>
+  <NuxtLink 
+    :to="`/work/${project.slug}`"
+    class="project-card group block"
+  >
+    <div class="relative overflow-hidden">
+      <GradientPlaceholder 
+        :variant="variant" 
+        :alt="`${project.title} project thumbnail`"
+      />
+      
+      <!-- Overlay on hover -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    </div>
+    
+    <!-- Card Info -->
+    <div class="mt-4 flex items-end justify-between gap-4">
+      <h3 class="text-sm md:text-base font-sans font-medium text-white group-hover:text-brand-light transition-colors">
+        {{ project.title }}
+      </h3>
+      <div class="flex items-center gap-2 shrink-0">
+        <span class="label-text">{{ project.tag }}</span>
+        <span class="text-brand-muted text-[10px]">{{ project.year }}</span>
+      </div>
+    </div>
+  </NuxtLink>
+</template>
+
+<script setup>
+defineProps({
+  project: {
+    type: Object,
+    required: true
+  },
+  variant: {
+    type: String,
+    default: 'square'
+  }
+})
+</script>
+
+<style scoped>
+.project-card {
+  @apply transition-transform duration-300;
+}
+
+.project-card:hover {
+  @apply -translate-y-1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card:hover {
+    transform: none;
+  }
+}
+</style>

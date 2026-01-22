@@ -1,0 +1,10 @@
+[
+  { "slug": "renaissance-world-tour", "title": "Renaissance World Tour", "tag": "Tour", "year": "2023", "description": "A high-energy tour series capturing the light, crowd, and backstage moments." },
+  { "slug": "big-steppers-tour", "title": "The Big Steppers Tour", "tag": "Tour", "year": "2022", "description": "A cinematic run of arena nights and raw on-stage presence." },
+  { "slug": "festival-weekend-one", "title": "Festival Weekend One", "tag": "Festival", "year": "2024", "description": "Color, heat, motion—festival moments from golden hour to headline sets." },
+  { "slug": "backstage-portraits", "title": "Backstage Portraits", "tag": "Backstage", "year": "2024", "description": "Quiet frames in loud places—portraits behind the curtain." },
+  { "slug": "editorial-covers", "title": "Editorial & Press", "tag": "Editorial", "year": "2023", "description": "Press-ready frames built for magazines, campaigns, and announcements." },
+  { "slug": "tour-doc-series", "title": "Tour Documentary Series", "tag": "Tour", "year": "2023", "description": "A behind-the-scenes visual story across multiple cities." },
+  { "slug": "night-shots", "title": "Night Shots & Crowd Energy", "tag": "Festival", "year": "2022", "description": "Crowd heat, silhouette moments, and stage-light glow." },
+  { "slug": "artist-portraits", "title": "Artist Portraits", "tag": "Portraits", "year": "2024", "description": "Minimal portraits with strong mood and intention." }
+]
