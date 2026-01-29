@@ -4,7 +4,14 @@
     class="project-card group block"
   >
     <div class="relative overflow-hidden">
+      <img 
+        v-if="project.thumbnail"
+        :src="project.thumbnail"
+        :alt="`${project.title} project thumbnail`"
+        class="w-full aspect-[4/3] object-cover"
+      />
       <GradientPlaceholder 
+        v-else
         :variant="variant" 
         :alt="`${project.title} project thumbnail`"
       />

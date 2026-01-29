@@ -18,14 +18,28 @@
         </p>
       </header>
 
-      <!-- Placeholder Gallery Grid -->
+      <!-- Gallery Grid -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-        <div v-for="i in 12" :key="i" class="gallery-item">
-          <GradientPlaceholder 
-            :variant="getPlaceholderVariant(i)" 
-            :alt="`Gallery image ${i} placeholder`"
-          />
-        </div>
+        <!-- Real images when available -->
+        <template v-if="project?.images?.length">
+          <div v-for="(image, index) in project.images" :key="index" class="gallery-item">
+            <img 
+              :src="image"
+              :alt="`${project.title} gallery image ${index + 1}`"
+              class="w-full aspect-[4/3] object-cover rounded-sm"
+              loading="lazy"
+            />
+          </div>
+        </template>
+        <!-- Placeholder fallback -->
+        <template v-else>
+          <div v-for="i in 12" :key="i" class="gallery-item">
+            <GradientPlaceholder 
+              :variant="getPlaceholderVariant(i)" 
+              :alt="`Gallery image ${i} placeholder`"
+            />
+          </div>
+        </template>
       </div>
 
       <!-- Prev/Next Navigation -->
