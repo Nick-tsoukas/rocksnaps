@@ -57,15 +57,22 @@
             </div>
           </div>
 
-          <!-- Gear Section (Optional) -->
+          <!-- Gear Section -->
           <div class="mt-12 pt-12 border-t border-white/10">
-            <h2 class="label-text mb-6">Gear</h2>
+            <h2 class="label-text mb-6">Cameras</h2>
             <ul class="space-y-2 text-sm text-brand-light">
-              <li>Sony α1 / α7S III</li>
-              <li>24-70mm f/2.8 GM II</li>
-              <li>70-200mm f/2.8 GM II</li>
-              <li>35mm f/1.4 GM</li>
-              <li>85mm f/1.4 GM</li>
+              <li>Canon R5 Mark II</li>
+              <li>Canon R6</li>
+            </ul>
+            
+            <h2 class="label-text mb-6 mt-8">Lenses</h2>
+            <ul class="space-y-2 text-sm text-brand-light">
+              <li>Canon 300mm f/2.8</li>
+              <li>Canon 70-200mm f/2.8</li>
+              <li>Tamron 24-70mm f/2.8</li>
+              <li>Sigma 35mm f/1.4 Art</li>
+              <li>Sigma 50mm f/1.4 Art</li>
+              <li>Sigma 85mm f/1.2 Art</li>
             </ul>
           </div>
 

@@ -176,5 +176,47 @@
       "/Starcrawler/IMG_9127.jpg",
       "/Starcrawler/IMG_9174.jpg"
     ]
+  },
+  {
+    "slug": "john-oates",
+    "title": "John Oates",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Hall & Oates legend John Oates delivers timeless soul and rock with unmistakable style.",
+    "thumbnail": "/John Oates/IMG_6285 (1).jpg",
+    "images": [
+      "/John Oates/IMG_6285 (1).jpg",
+      "/John Oates/IMG_6317 (2).jpg",
+      "/John Oates/IMG_6372 (1).jpg",
+      "/John Oates/IMG_6496 (1).jpg",
+      "/John Oates/IMG_6552.jpg"
+    ]
+  },
+  {
+    "slug": "ketch-secor",
+    "title": "Ketch Secor (Old Crow Medicine Show)",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Frontman of Old Crow Medicine Show brings Americana and folk traditions to life on stage.",
+    "thumbnail": "/Ketch Secor (Old Crow Medicine Show)/IMG_5785.jpg",
+    "images": [
+      "/Ketch Secor (Old Crow Medicine Show)/IMG_5785.jpg",
+      "/Ketch Secor (Old Crow Medicine Show)/IMG_5958.jpg",
+      "/Ketch Secor (Old Crow Medicine Show)/IMG_6010 (1).jpg"
+    ]
+  },
+  {
+    "slug": "langhorne-slim",
+    "title": "Langhorne Slim",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Raw, emotional folk-rock from Langhorne Slim. Heartfelt performances with undeniable energy.",
+    "thumbnail": "/Langhorne Slim/IMG_4605 (1).jpg",
+    "images": [
+      "/Langhorne Slim/IMG_4605 (1).jpg",
+      "/Langhorne Slim/IMG_4655.jpg",
+      "/Langhorne Slim/IMG_4669 (2).jpg",
+      "/Langhorne Slim/IMG_4713 (1).jpg"
+    ]
   }
 ]
