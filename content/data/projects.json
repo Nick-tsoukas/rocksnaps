@@ -84,12 +84,97 @@
       "/Buckcherry/IMG_9698 (1).jpg"
     ]
   },
-  { "slug": "renaissance-world-tour", "title": "Renaissance World Tour", "tag": "Tour", "year": "2023", "description": "A high-energy tour series capturing the light, crowd, and backstage moments." },
-  { "slug": "big-steppers-tour", "title": "The Big Steppers Tour", "tag": "Tour", "year": "2022", "description": "A cinematic run of arena nights and raw on-stage presence." },
-  { "slug": "festival-weekend-one", "title": "Festival Weekend One", "tag": "Festival", "year": "2024", "description": "Color, heat, motion—festival moments from golden hour to headline sets." },
-  { "slug": "backstage-portraits", "title": "Backstage Portraits", "tag": "Backstage", "year": "2024", "description": "Quiet frames in loud places—portraits behind the curtain." },
-  { "slug": "editorial-covers", "title": "Editorial & Press", "tag": "Editorial", "year": "2023", "description": "Press-ready frames built for magazines, campaigns, and announcements." },
-  { "slug": "tour-doc-series", "title": "Tour Documentary Series", "tag": "Tour", "year": "2023", "description": "A behind-the-scenes visual story across multiple cities." },
-  { "slug": "night-shots", "title": "Night Shots & Crowd Energy", "tag": "Festival", "year": "2022", "description": "Crowd heat, silhouette moments, and stage-light glow." },
-  { "slug": "artist-portraits", "title": "Artist Portraits", "tag": "Portraits", "year": "2024", "description": "Minimal portraits with strong mood and intention." }
+  {
+    "slug": "bush",
+    "title": "Bush",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Gavin Rossdale and Bush deliver iconic 90s alternative rock with timeless energy and presence.",
+    "thumbnail": "/Bush/IMG_4526.jpg",
+    "images": [
+      "/Bush/IMG_4526.jpg",
+      "/Bush/IMG_4690.jpg",
+      "/Bush/IMG_4707.jpg",
+      "/Bush/IMG_8328.jpg",
+      "/Bush/IMG_8898 (1).jpg",
+      "/Bush/IMG_9122 (1).jpg"
+    ]
+  },
+  {
+    "slug": "from-ashes-to-new",
+    "title": "From Ashes To New",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Hard-hitting modern rock with electronic elements. From Ashes To New brings explosive energy to every performance.",
+    "thumbnail": "/From Ashes To New/IMG_5443.jpg",
+    "images": [
+      "/From Ashes To New/IMG_5443.jpg",
+      "/From Ashes To New/IMG_5513.jpg",
+      "/From Ashes To New/IMG_5518 (1).jpg",
+      "/From Ashes To New/IMG_5614.jpg",
+      "/From Ashes To New/IMG_5653.jpg",
+      "/From Ashes To New/IMG_5668.jpg",
+      "/From Ashes To New/IMG_5673.jpg",
+      "/From Ashes To New/IMG_5734 (1).jpg",
+      "/From Ashes To New/IMG_5883 (1).jpg",
+      "/From Ashes To New/IMG_6081.jpg"
+    ]
+  },
+  {
+    "slug": "garbage",
+    "title": "Garbage",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Shirley Manson and Garbage bring alternative rock attitude and style. Dark, edgy, and captivating.",
+    "thumbnail": "/Garbage/13_garbage.jpg",
+    "images": [
+      "/Garbage/13_garbage.jpg",
+      "/Garbage/IMG_0046.jpg",
+      "/Garbage/IMG_9316.jpg",
+      "/Garbage/IMG_9335.jpg",
+      "/Garbage/IMG_9340.jpg",
+      "/Garbage/IMG_9360.jpg",
+      "/Garbage/IMG_9385.jpg"
+    ]
+  },
+  {
+    "slug": "mushroomhead",
+    "title": "Mushroomhead",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Cleveland's masked metal legends. Mushroomhead delivers theatrical chaos and heavy riffs.",
+    "thumbnail": "/Mushroomhead/IMG_0452 (1).jpg",
+    "images": [
+      "/Mushroomhead/IMG_0452 (1).jpg",
+      "/Mushroomhead/IMG_0581.jpg",
+      "/Mushroomhead/IMG_0591 (1).jpg",
+      "/Mushroomhead/IMG_0843 (1).jpg",
+      "/Mushroomhead/IMG_7737 (2).jpg",
+      "/Mushroomhead/IMG_8162 (1).jpg",
+      "/Mushroomhead/IMG_8172.jpg",
+      "/Mushroomhead/IMG_9239.jpg",
+      "/Mushroomhead/IMG_9244 (2) (2).jpg",
+      "/Mushroomhead/IMG_9249 (1).jpg",
+      "/Mushroomhead/IMG_9462 (1) (1).jpg",
+      "/Mushroomhead/IMG_9467 (1).jpg",
+      "/Mushroomhead/IMG_9522 (1).jpg",
+      "/Mushroomhead/IMG_9529 (1).jpg"
+    ]
+  },
+  {
+    "slug": "starcrawler",
+    "title": "Starcrawler",
+    "tag": "Concert",
+    "year": "2024",
+    "description": "Young, wild, and electrifying. Starcrawler brings glam-punk energy with fierce stage presence.",
+    "thumbnail": "/Starcrawler/IMG_8672.jpg",
+    "images": [
+      "/Starcrawler/IMG_8672.jpg",
+      "/Starcrawler/IMG_8676.jpg",
+      "/Starcrawler/IMG_8873.jpg",
+      "/Starcrawler/IMG_9054.jpg",
+      "/Starcrawler/IMG_9127.jpg",
+      "/Starcrawler/IMG_9174.jpg"
+    ]
+  }
 ]
