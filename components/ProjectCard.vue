@@ -4,11 +4,15 @@
     class="project-card group block"
   >
     <div class="relative overflow-hidden">
-      <img 
+      <NuxtImg 
         v-if="project.thumbnail"
         :src="project.thumbnail"
         :alt="`${project.title} project thumbnail`"
+        width="600"
+        height="450"
+        sizes="sm:100vw md:50vw lg:33vw"
         class="w-full aspect-[4/3] object-cover"
+        loading="lazy"
       />
       <GradientPlaceholder 
         v-else
