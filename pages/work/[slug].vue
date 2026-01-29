@@ -19,30 +19,19 @@
       </header>
 
       <!-- Gallery Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-        <!-- Real images when available -->
-        <template v-if="project?.images?.length">
-          <div v-for="(image, index) in project.images" :key="index" class="gallery-item">
-            <NuxtImg 
-              :src="image"
-              :alt="`${project.title} gallery image ${index + 1}`"
-              width="800"
-              height="600"
-              sizes="sm:50vw md:33vw lg:25vw"
-              class="w-full aspect-[4/3] object-cover rounded-sm"
-              loading="lazy"
-            />
-          </div>
-        </template>
-        <!-- Placeholder fallback -->
-        <template v-else>
-          <div v-for="i in 12" :key="i" class="gallery-item">
-            <GradientPlaceholder 
-              :variant="getPlaceholderVariant(i)" 
-              :alt="`Gallery image ${i} placeholder`"
-            />
-          </div>
-        </template>
+      <PhotoGallery 
+        v-if="project?.images?.length"
+        :images="project.images"
+        :title="project.title"
+      />
+      <!-- Placeholder fallback -->
+      <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+        <div v-for="i in 12" :key="i" class="gallery-item">
+          <GradientPlaceholder 
+            :variant="getPlaceholderVariant(i)" 
+            :alt="`Gallery image ${i} placeholder`"
+          />
+        </div>
       </div>
 
       <!-- Prev/Next Navigation -->
@@ -128,11 +117,4 @@ useHead({
   content: none;
 }
 
-.gallery-item:nth-child(3n+1) {
-  @apply md:col-span-2 lg:col-span-1;
-}
-
-.gallery-item:nth-child(5n) {
-  @apply lg:col-span-2;
-}
 </style>

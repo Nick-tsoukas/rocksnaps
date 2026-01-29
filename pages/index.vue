@@ -23,9 +23,15 @@
     <section class="py-16 lg:py-24 border-t border-white/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-          <!-- Left: Portrait Placeholder -->
-          <div class="aspect-[4/5] max-w-md mx-auto lg:mx-0">
-            <GradientPlaceholder variant="portrait" alt="Pat Rogers portrait" />
+          <!-- Left: Featured Photo -->
+          <div class="aspect-[4/5] max-w-md mx-auto lg:mx-0 overflow-hidden rounded-sm">
+            <NuxtImg 
+              src="/Shinedown/IMG_5487.jpg"
+              alt="Shinedown live performance"
+              width="800"
+              height="1000"
+              class="w-full h-full object-cover"
+            />
           </div>
 
           <!-- Right: About Content -->

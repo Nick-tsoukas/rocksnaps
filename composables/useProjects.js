@@ -9,7 +9,7 @@ export const useProjects = () => {
   })
 
   const featured = computed(() => {
-    return projects.value.slice(0, 7)
+    return projects.value
   })
 
   const filterByTag = (tag) => {
