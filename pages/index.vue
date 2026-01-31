@@ -4,10 +4,10 @@
     <HeroSection :name="siteData.name" :tagline="siteData.tagline" />
 
     <!-- Selected Work Section -->
-    <section class="py-16 lg:py-24 bg-brand-black">
+    <section class="py-8 lg:py-12 bg-brand-black">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="flex items-center justify-between mb-10 lg:mb-14">
+        <div class="flex items-center justify-between mb-6 lg:mb-8">
           <span class="label-text">Selected Work</span>
           <NuxtLink to="/work" class="link-arrow">
             All Projects

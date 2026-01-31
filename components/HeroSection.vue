@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen flex items-center pt-20 lg:pt-0">
+  <section class="relative min-h-[70vh] lg:min-h-[80vh] flex items-end pb-16 lg:pb-24 pt-20">
     <!-- Background gradient -->
     <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
       <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/10" />
