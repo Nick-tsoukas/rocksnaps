@@ -1,33 +1,33 @@
 <template>
   <div class="project-grid">
-    <!-- Row 1: Hero feature + two stacked -->
-    <div v-if="projects[0]" class="col-span-12 md:col-span-7 md:row-span-2">
-      <ProjectCard :project="projects[0]" variant="feature" class="h-full" />
+    <!-- Row 1: Three equal tall cards - clean, balanced -->
+    <div v-if="projects[0]" class="col-span-6 md:col-span-4">
+      <ProjectCard :project="projects[0]" variant="tall" />
     </div>
-    <div v-if="projects[1]" class="col-span-6 md:col-span-5">
-      <ProjectCard :project="projects[1]" variant="square" />
+    <div v-if="projects[1]" class="col-span-6 md:col-span-4">
+      <ProjectCard :project="projects[1]" variant="tall" />
     </div>
-    <div v-if="projects[2]" class="col-span-6 md:col-span-5">
-      <ProjectCard :project="projects[2]" variant="square" />
+    <div v-if="projects[2]" class="col-span-12 md:col-span-4">
+      <ProjectCard :project="projects[2]" variant="tall" />
     </div>
 
-    <!-- Row 2: Three equal columns -->
-    <div v-if="projects[3]" class="col-span-6 md:col-span-4">
-      <ProjectCard :project="projects[3]" variant="tall" />
+    <!-- Row 2: Wide cinematic + portrait -->
+    <div v-if="projects[3]" class="col-span-12 md:col-span-8">
+      <ProjectCard :project="projects[3]" variant="wide" />
     </div>
-    <div v-if="projects[4]" class="col-span-6 md:col-span-4">
+    <div v-if="projects[4]" class="col-span-12 md:col-span-4">
       <ProjectCard :project="projects[4]" variant="tall" />
     </div>
-    <div v-if="projects[5]" class="col-span-12 md:col-span-4">
+
+    <!-- Row 3: Three equal cards -->
+    <div v-if="projects[5]" class="col-span-6 md:col-span-4">
       <ProjectCard :project="projects[5]" variant="tall" />
     </div>
-
-    <!-- Row 3: Wide feature + portrait -->
-    <div v-if="projects[6]" class="col-span-12 md:col-span-8">
-      <ProjectCard :project="projects[6]" variant="wide" />
+    <div v-if="projects[6]" class="col-span-6 md:col-span-4">
+      <ProjectCard :project="projects[6]" variant="tall" />
     </div>
     <div v-if="projects[7]" class="col-span-12 md:col-span-4">
-      <ProjectCard :project="projects[7]" variant="portrait" />
+      <ProjectCard :project="projects[7]" variant="tall" />
     </div>
   </div>
 </template>
@@ -43,14 +43,6 @@ defineProps({
 
 <style scoped>
 .project-grid {
-  @apply grid grid-cols-12 gap-3 md:gap-4;
-}
-
-.project-grid > div:first-child :deep(.project-card > div:first-child) {
-  @apply aspect-[4/5] md:aspect-auto md:h-full;
-}
-
-.project-grid > div:first-child :deep(img) {
-  @apply h-full;
+  @apply grid grid-cols-12 gap-2 md:gap-3;
 }
 </style>

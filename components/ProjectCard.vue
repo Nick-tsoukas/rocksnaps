@@ -49,13 +49,13 @@ const props = defineProps({
 
 const aspectClass = computed(() => {
   const aspects = {
-    tall: 'aspect-[2/3]',
-    wide: 'aspect-[3/2]',
-    square: 'aspect-[4/5]',
-    feature: 'aspect-[3/2]',
-    portrait: 'aspect-[2/3]'
+    tall: 'aspect-[3/4]',
+    wide: 'aspect-[16/9]',
+    square: 'aspect-square',
+    feature: 'aspect-[16/9]',
+    portrait: 'aspect-[3/4]'
   }
-  return aspects[props.variant] || 'aspect-[4/5]'
+  return aspects[props.variant] || 'aspect-[3/4]'
 })
 </script>
 
