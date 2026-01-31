@@ -6,19 +6,8 @@
         <h1 class="font-serif text-display-lg text-white">About Pat Rogers</h1>
       </header>
 
-      <!-- Content Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-        <!-- Left: Portrait -->
-        <div class="lg:col-span-5">
-          <div class="sticky top-32">
-            <div class="aspect-[4/5] max-w-md">
-              <GradientPlaceholder variant="portrait" alt="Pat Rogers portrait" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Bio Content -->
-        <div class="lg:col-span-7">
+      <!-- Bio Content -->
+      <div class="max-w-3xl">
           <div class="prose-content">
             <p class="text-lg lg:text-xl text-white leading-relaxed">
               Pat Rogers is a concert and music photographer based in Nashville, TN, 
@@ -87,7 +76,6 @@
               GET IN TOUCH
             </NuxtLink>
           </div>
-        </div>
       </div>
     </div>
   </main>

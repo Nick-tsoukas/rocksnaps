@@ -13,12 +13,12 @@
         class="h-full w-full"
         @slideChange="onSlideChange"
       >
-        <SwiperSlide v-for="project in projects" :key="project.slug">
+        <SwiperSlide v-for="project in projects" :key="project.slug" v-slot="{ isActive }">
           <div class="slide-bg">
             <NuxtImg 
               :src="project.thumbnail" 
               :alt="project.title"
-              class="slide-image"
+              :class="['slide-image', { 'ken-burns-active': isActive }]"
               loading="eager"
             />
           </div>
@@ -119,15 +119,18 @@ const onSlideChange = (swiper) => {
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  transform: scale(1.05);
-  animation: slowZoom 10s ease-out forwards;
+  transform: scale(1.0);
 }
 
-@keyframes slowZoom {
-  from {
-    transform: scale(1.1);
+.slide-image.ken-burns-active {
+  animation: deepZoom 6s ease-out forwards;
+}
+
+@keyframes deepZoom {
+  0% {
+    transform: scale(1.3);
   }
-  to {
+  100% {
     transform: scale(1.0);
   }
 }

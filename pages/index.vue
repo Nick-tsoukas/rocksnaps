@@ -3,54 +3,26 @@
     <!-- Hero Section with Background Slider -->
     <HeroSection :name="siteData.name" :tagline="siteData.tagline" :projects="featured" />
 
-    <!-- Selected Work Section -->
-    <section class="py-8 lg:py-12 bg-brand-black">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <!-- Section Header -->
-        <div class="flex items-center justify-between mb-6 lg:mb-8">
-          <span class="label-text">Selected Work</span>
-          <NuxtLink to="/work" class="link-arrow">
-            All Projects
-          </NuxtLink>
-        </div>
+    <!-- Band Showcase Sections -->
+    <BandShowcase 
+      v-for="(project, index) in featured.slice(0, 6)" 
+      :key="project.slug"
+      :project="project"
+      :alternate="index % 2 === 1"
+    />
 
-        <!-- Project Grid -->
-        <ProjectGrid :projects="featured" />
-      </div>
-    </section>
-
-    <!-- About Teaser Section -->
+    <!-- View All Work CTA -->
     <section class="py-16 lg:py-24 border-t border-white/5">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-          <!-- Left: Featured Photo -->
-          <div class="aspect-[4/5] max-w-md mx-auto lg:mx-0 overflow-hidden rounded-sm">
-            <NuxtImg 
-              src="/Shinedown/IMG_5487.jpg"
-              alt="Shinedown live performance"
-              class="w-full h-full object-contain"
-            />
-          </div>
-
-          <!-- Right: About Content -->
-          <div>
-            <span class="label-text">About</span>
-            <h2 class="mt-4 font-serif text-display-md text-white">
-              A decade of documenting live music
-            </h2>
-            <p class="mt-6 text-base lg:text-lg text-brand-light leading-relaxed max-w-lg">
-              Pat Rogers has spent over ten years capturing the energy, emotion, and raw moments 
-              of live performance. From arena tours to intimate club shows, the work focuses on 
-              finding the extraordinary in every frame.
-            </p>
-            <p class="mt-4 text-base lg:text-lg text-brand-light leading-relaxed max-w-lg">
-              Based in Nashville, TN, available worldwide.
-            </p>
-            <NuxtLink to="/about" class="link-arrow mt-8 inline-block">
-              Full Bio
-            </NuxtLink>
-          </div>
-        </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="font-serif text-display-md text-white">
+          Explore the full collection
+        </h2>
+        <p class="mt-4 text-lg text-brand-light max-w-xl mx-auto">
+          From arena tours to intimate club shows, discover the complete portfolio.
+        </p>
+        <NuxtLink to="/work" class="inline-block mt-8 px-10 py-4 bg-white text-brand-black text-sm font-semibold tracking-widest uppercase hover:bg-transparent hover:text-white border border-white transition-all duration-300">
+          View All Work
+        </NuxtLink>
       </div>
     </section>
 
