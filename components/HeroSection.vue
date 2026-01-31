@@ -5,6 +5,8 @@
       <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/10" />
       <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" />
       <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl" />
+      <!-- Bottom fade to blend with next section -->
+      <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-brand-black via-brand-black/50 to-transparent" />
     </div>
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24 w-full">

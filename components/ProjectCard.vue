@@ -3,15 +3,13 @@
     :to="`/work/${project.slug}`"
     class="project-card group block"
   >
-    <div class="relative overflow-hidden">
+    <div class="relative overflow-hidden bg-brand-black/50">
       <NuxtImg 
         v-if="project.thumbnail"
         :src="project.thumbnail"
         :alt="`${project.title} project thumbnail`"
-        width="600"
-        height="450"
         sizes="sm:100vw md:50vw lg:33vw"
-        class="w-full aspect-[4/3] object-cover"
+        :class="['w-full object-contain', aspectClass]"
         loading="lazy"
       />
       <GradientPlaceholder 
@@ -38,7 +36,7 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   project: {
     type: Object,
     required: true
@@ -47,6 +45,17 @@ defineProps({
     type: String,
     default: 'square'
   }
+})
+
+const aspectClass = computed(() => {
+  const aspects = {
+    tall: 'aspect-[3/4]',
+    wide: 'aspect-[2/1]',
+    square: 'aspect-square',
+    feature: 'aspect-video',
+    portrait: 'aspect-[4/5]'
+  }
+  return aspects[props.variant] || 'aspect-square'
 })
 </script>
 

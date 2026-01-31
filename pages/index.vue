@@ -4,7 +4,7 @@
     <HeroSection :name="siteData.name" :tagline="siteData.tagline" />
 
     <!-- Selected Work Section -->
-    <section class="py-16 lg:py-24">
+    <section class="py-16 lg:py-24 bg-brand-black">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <!-- Section Header -->
         <div class="flex items-center justify-between mb-10 lg:mb-14">
@@ -28,9 +28,7 @@
             <NuxtImg 
               src="/Shinedown/IMG_5487.jpg"
               alt="Shinedown live performance"
-              width="800"
-              height="1000"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-contain"
             />
           </div>
 

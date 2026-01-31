@@ -9,10 +9,8 @@
       <NuxtImg 
         :src="image"
         :alt="`${title} gallery image ${index + 1}`"
-        width="800"
-        height="600"
         sizes="sm:50vw md:33vw lg:25vw"
-        class="w-full aspect-[4/3] object-cover rounded-sm hover:opacity-90 transition-opacity"
+        class="w-full object-contain rounded-sm hover:opacity-90 transition-opacity bg-brand-black/50"
         loading="lazy"
       />
     </div>
