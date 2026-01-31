@@ -1,7 +1,7 @@
 <template>
   <main>
-    <!-- Hero Section -->
-    <HeroSection :name="siteData.name" :tagline="siteData.tagline" />
+    <!-- Hero Section with Background Slider -->
+    <HeroSection :name="siteData.name" :tagline="siteData.tagline" :projects="featured" />
 
     <!-- Selected Work Section -->
     <section class="py-8 lg:py-12 bg-brand-black">

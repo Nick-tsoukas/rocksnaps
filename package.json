@@ -13,6 +13,7 @@
     "@nuxt/image": "^2.0.0",
     "nuxt": "^3.13.2",
     "photoswipe": "^5.4.4",
+    "swiper": "^12.1.0",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },

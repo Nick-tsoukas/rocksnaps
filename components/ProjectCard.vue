@@ -49,6 +49,7 @@ const props = defineProps({
 
 const aspectClass = computed(() => {
   const aspects = {
+    cinematic: 'aspect-[21/9]',
     hero: 'aspect-[4/5]',
     tall: 'aspect-[3/4]',
     wide: 'aspect-[16/9]',
